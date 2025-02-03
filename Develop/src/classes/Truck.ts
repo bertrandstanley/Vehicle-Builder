@@ -1,4 +1,3 @@
-// Truck.ts
 import Vehicle from './Vehicle.js';
 import Wheel from './Wheel.js';
 import AbleToTow from '../interfaces/AbleToTow.js';

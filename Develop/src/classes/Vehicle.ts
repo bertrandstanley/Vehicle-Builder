@@ -1,4 +1,3 @@
-// Vehicle.ts
 import Driveable from '../interfaces/Driveable.js';
 
 class Vehicle implements Driveable {
