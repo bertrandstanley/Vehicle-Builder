@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",   // Keep your ES2020 target for modern JavaScript features
+
+    /* Modules */
+    "module": "ESNext",   // ESNext is fine for modern JS modules
+    "rootDir": "src",      // Keep the source folder as rootDir
+    "moduleResolution": "node", // Change this to "node" for standard module resolution in Node.js
+
+    /* JavaScript Support */
+    "allowJs": true,      // Allow JS files in the project (though this is typically unnecessary if you're not mixing JS and TS)
+    "checkJs": true,      // Enable type checking for JS files (again, only necessary if mixing JS and TS)
+
+    /* Emit */
+    "outDir": "dist",     // Output folder for compiled files
+    "noEmitOnError": true, // Don't emit files on type errors
+
+    /* Interop Constraints */
+    "esModuleInterop": true, // Allow ESModule imports for compatibility with CommonJS (better interop)
+
+    "forceConsistentCasingInFileNames": true, // Ensure file names are consistent
+
+    /* Type Checking */
+    "noImplicitAny": true,      // Disallow 'any' type for better type safety
+    "strictNullChecks": true,   // Enable strict checking for null and undefined
+    "strictFunctionTypes": true, // Enforce stricter function signatures
+    "strictBindCallApply": true, // Enforce stricter function binding
+    "strictPropertyInitialization": true, // Ensure proper initialization of properties in constructors
+    "noImplicitThis": true,     // Disallow implicit 'this' type
+    "exactOptionalPropertyTypes": true, // Ensure optional properties are properly handled
+    "noImplicitReturns": true,  // Ensure all functions have return types explicitly declared
+    "noImplicitOverride": true  // Ensure proper use of 'override' keyword
+  },
+  "include": ["src"],  // Ensure all files in the 'src' directory are compiled
+}
