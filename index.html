@@ -1,0 +1,41 @@
+import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-dom";
+import { useState } from "react";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
+import "./App.css";
+
+function App() {
+  return (
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+function Header() {
+  return (
+    <header className="header">
+      <h1>Developer Name</h1>
+      <nav>
+        <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>About Me</NavLink>
+        <NavLink to="/portfolio" className={({ isActive }) => (isActive ? "active" : "")}>Portfolio</NavLink>
+        <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact</NavLink>
+        <NavLink to="/resume" className={({ isActive }) => (isActive ? "active" : "")}>Resume</NavLink>
+      </nav>
+    </header>
+  );
+}
+
+export default App;
