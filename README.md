@@ -9,7 +9,8 @@ This application will help you build three types of vehicles: cars, motorbikes, 
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
+- [Test](#test)
+- [Video Demo](#video-demo)
 - [Questions](#questions)
 
 ## Installation
